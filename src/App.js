@@ -8,8 +8,8 @@ function App(props) {
   });
 
   useEffect(() => {
-    console.log("Rendered!");
-  });
+    console.log("Hellooo");
+  }, [count]);
 
   return (
     <div className="App">
