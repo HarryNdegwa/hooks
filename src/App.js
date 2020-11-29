@@ -1,10 +1,14 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App(props) {
   const [{ count, count2 }, setCount, setCount2] = useState({
     count: 10,
     count2: 20,
+  });
+
+  useEffect(() => {
+    console.log("Rendered!");
   });
 
   return (
